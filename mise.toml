@@ -1,0 +1,8 @@
+[tools]
+bun = "1.2.21"
+uv = "0.8.17"
+
+[tasks]
+format = "mise exec pipx:ruff -- ruff format ."
+lint = "mise exec pipx:ruff -- ruff check . --fix"
+agent = "mise exec uv -- uv run ./main.py"
