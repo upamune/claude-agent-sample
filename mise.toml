@@ -2,6 +2,7 @@
 uv = "0.8.17"
 
 [tasks]
-format = "mise exec pipx:ruff -- ruff format ."
-lint = "mise exec pipx:ruff -- ruff check . --fix"
-agent = "mise exec uv -- uv run ./main.py"
+format = "./bin/mise exec pipx:ruff -- ruff format ."
+lint = "./bin/mise exec pipx:ruff -- ruff check . --fix"
+agent = "./bin/mise exec uv -- uv run ./main.py"
+
